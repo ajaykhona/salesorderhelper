@@ -335,6 +335,6 @@ app.get('/recentOrder', (req, res) => {
 });
 
 /** LISTENING PORT */
-app.listen(4000, function () {
+app.listen(process.env.PORT || 4000, function () {
     console.log("Listening at 4000....");
 });
